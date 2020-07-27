@@ -2,9 +2,18 @@
   "name": "bluetooth-sniffer",
   "version": "0.0.0",
   "description": "Sniffer of bluetooth traffic between phone and watch",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "git@github.com:OpenFenix/bluetooth-sniffer.git",
   "author": "nemanjan00 <nemanjan00@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "frida-compile src -o bluetooth-sniffer.js",
+    "watch": "frida-compile src -o bluetooth-sniffer.js -w"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^16.1.0",
+    "frida-compile": "^9.3.0"
+  }
 }
