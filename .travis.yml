@@ -6,7 +6,7 @@ cache: yarn
 
 
 before_script:
-  - yarn
+  - yarn --frozen-lockfile
 
 script:
   - yarn build
