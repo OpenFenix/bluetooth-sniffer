@@ -4,3 +4,7 @@
 # Dist
 /dist
 
+# Yarn log
+
+/yarn-error.log
+

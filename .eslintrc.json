@@ -32,6 +32,7 @@
         "no-redeclare": 1,
         "no-trailing-spaces": "error",
         "apklab-frida/check-file-jsdoc": 0,
-        "no-tabs": 0
+        "no-tabs": 0,
+        "comma-dangle": 0
     }
 }

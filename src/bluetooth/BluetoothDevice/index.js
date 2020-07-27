@@ -1,9 +1,3 @@
-/**
-* <DESCRIPTION>
-*
-* @author <YOUR NAME>
-**/
-
 const bondMap = {
 	10: "BOND_NONE",
 	11: "BOND_BONDING",
@@ -16,6 +10,31 @@ const typeMap = {
 	3: "DEVICE_TYPE_DUAL",
 	0: "DEVICE_TYPE_UNKNOWN",
 };
+
+const BluetoothDevice = Java.use("android.bluetooth.BluetoothDevice");
+
+const getAddress = BluetoothDevice.getAddress;
+const getName = BluetoothDevice.getName;
+const getBondState = BluetoothDevice.getBondState;
+const getType = BluetoothDevice.getType;
+
+getAddress.implementation = function() {
+	return devices.getDeviceInfo(this).address;
+};
+
+getName.implementation = function() {
+	return devices.getDeviceInfo(this).name;
+};
+
+getBondState.implementation = function() {
+	return devices.getDeviceInfo(this).bondState;
+};
+
+getType.implementation = function() {
+	return devices.getDeviceInfo(this).type;
+};
+
+console.log(123);
 
 const devices = {
 	byName: {},
@@ -40,17 +59,8 @@ const devices = {
 
 		console.log(JSON.stringify(devices, null, 4));
 	},
-};
 
-Java.perform(function() {
-	const BluetoothDevice = Java.use("android.bluetooth.BluetoothDevice");
-
-	const getAddress = BluetoothDevice.getAddress;
-	const getName = BluetoothDevice.getName;
-	const getBondState = BluetoothDevice.getBondState;
-	const getType = BluetoothDevice.getType;
-
-	const getDevice = function(that) {
+	getDeviceInfo: function(that) {
 		const address = getAddress.call(that);
 		const name = getName.call(that);
 		const bondState = getBondState.call(that);
@@ -68,24 +78,9 @@ Java.perform(function() {
 		devices.storeDevice(device);
 
 		return device;
-	};
+	}
+};
 
-	getAddress.implementation = function() {
-		return getDevice(this).address;
-	};
-
-	getName.implementation = function() {
-		return getDevice(this).name;
-	};
-
-	getBondState.implementation = function() {
-		return getDevice(this).bondState;
-	};
-
-	getType.implementation = function() {
-		return getDevice(this).type;
-	};
-});
 
 module.exports = devices;
 

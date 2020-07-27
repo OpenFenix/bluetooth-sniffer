@@ -1,8 +1,4 @@
-/**
-* <DESCRIPTION>
-*
-* @author <YOUR NAME>
-**/
-
-require("./bluetooth/BluetoothDevice");
+Java.perform(function() {
+	require("./bluetooth/BluetoothDevice");
+});
 
