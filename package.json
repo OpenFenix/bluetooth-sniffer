@@ -1,0 +1,10 @@
+{
+  "name": "bluetooth-sniffer",
+  "version": "0.0.0",
+  "description": "Sniffer of bluetooth traffic between phone and watch",
+  "main": "index.js",
+  "repository": "git@github.com:OpenFenix/bluetooth-sniffer.git",
+  "author": "nemanjan00 <nemanjan00@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
