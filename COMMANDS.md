@@ -1,14 +1,4 @@
 # COMMANDS
-## 17 - ping
 
-```
-	17 0 1
-	17 0 2
-	17 0 3
-	17 0 4
-	17 0 5
-```
-
-## 64 - ping
-
+First byte - Number of communication channel
 
