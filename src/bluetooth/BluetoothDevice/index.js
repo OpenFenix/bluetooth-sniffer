@@ -54,8 +54,6 @@ const devices = {
 				devices.byName[device.name] = device;
 			}
 		}
-
-		console.log(JSON.stringify(devices, null, 4));
 	},
 
 	getDeviceInfo: function(that) {
