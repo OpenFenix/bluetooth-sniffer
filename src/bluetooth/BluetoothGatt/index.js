@@ -1,6 +1,7 @@
 const devices = require("../BluetoothDevice");
 
 const BluetoothGatt = Java.use("android.bluetooth.BluetoothGatt");
+const BluetoothGattService = Java.use("android.bluetooth.BluetoothGattService");
 
 const getDevice = BluetoothGatt.getDevice;
 const getServices = BluetoothGatt.getServices;
@@ -19,7 +20,9 @@ getServices.implementation = function() {
 	const iter = services.iterator();
 
 	while (iter.hasNext()) {
-		console.log(iter.next());
+		const service = iter.next();
+
+		console.log(BluetoothGattService.getUuid.call(service));
 	}
 
 	return services;
