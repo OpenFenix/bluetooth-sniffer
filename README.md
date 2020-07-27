@@ -25,6 +25,16 @@ Sniffer of bluetooth traffic between phone and watch 🐶
         1 connectGatt(Landroid/content/Context;ZLandroid/bluetooth/BluetoothGattCallback;I)Landroid/bluetooth/BluetoothGatt;
      63 Landroid/bluetooth/BluetoothAdapter
      60 Landroid/bluetooth/BluetoothGatt
+        3 getDevice()Landroid/bluetooth/BluetoothDevice;
+        2 setCharacteristicNotification(Landroid/bluetooth/BluetoothGattCharacteristic;Z)Z
+        2 getServices()Ljava/util/List;
+        2 getService(Ljava/util/UUID;)Landroid/bluetooth/BluetoothGattService;
+        1 writeDescriptor(Landroid/bluetooth/BluetoothGattDescriptor;)Z
+        1 writeCharacteristic(Landroid/bluetooth/BluetoothGattCharacteristic;)Z
+        1 readCharacteristic(Landroid/bluetooth/BluetoothGattCharacteristic;)Z
+        1 discoverServices()Z
+        1 disconnect()V
+        1 close()V
      44 Landroid/bluetooth/le/ScanResult
      40 Landroid/bluetooth/le/ScanCallback
      32 Landroid/bluetooth/BluetoothGattCharacteristic
