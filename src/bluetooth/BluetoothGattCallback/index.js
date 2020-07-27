@@ -1,3 +1,5 @@
+// https://developer.android.com/reference/android/bluetooth/BluetoothGattCallback
+
 const BluetoothGattCallback = Java.use("h.a.j.a.a");
 const BluetoothGattCharacteristic = Java.use("android.bluetooth.BluetoothGattCharacteristic");
 // const String = Java.use("java.lang.String");
