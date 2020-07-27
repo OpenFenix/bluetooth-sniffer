@@ -1,5 +1,7 @@
 # bluetooth-sniffer
 
+[![Build Status](https://travis-ci.org/OpenFenix/bluetooth-sniffer.svg?branch=master)](https://travis-ci.org/OpenFenix/bluetooth-sniffer)
+
 Sniffer of bluetooth traffic between phone and watch 🐶
 
 ## Table of contents
