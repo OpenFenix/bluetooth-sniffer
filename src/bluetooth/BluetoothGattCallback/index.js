@@ -26,19 +26,19 @@ onCharacteristicChanged.implementation = function(gatt, characteristic) {
 
 	const uuid = BluetoothGattCharacteristic.getUuid.call(characteristic);
 
+	const packet = [];
+
 	if (buffersIn[uuid] === undefined) {
 		buffersIn[uuid] = [];
 	}
 
 	for (var i = 0; i < buffer.length; ++i) {
-		buffersIn[uuid].push(buffer[i]);
+		packet.push(buffer[i]);
 	}
 
-	console.log(`Characteristic ${uuid} changed ${(buffersIn[uuid]).join(" ")}`);
+	console.log(`Characteristic ${uuid} changed ${(packet).join(" ")}`);
 
-	console.log();
-	console.log();
-	console.log();
+	buffersIn[uuid].push(packet);
 
 	onCharacteristicChanged.call(this, gatt, characteristic);
 };
@@ -50,19 +50,19 @@ onCharacteristicWrite.implementation = function(gatt, characteristic, status) {
 
 	const uuid = BluetoothGattCharacteristic.getUuid.call(characteristic);
 
+	const packet = [];
+
 	if (buffers[uuid] === undefined) {
 		buffers[uuid] = [];
 	}
 
 	for (var i = 0; i < buffer.length; ++i) {
-		buffers[uuid].push(buffer[i]);
+		packet.push(buffer[i]);
 	}
 
-	console.log(`Characteristic ${uuid} written ${(buffers[uuid]).join(" ")}`);
+	buffers[uuid].push(packet);
 
-	console.log();
-	console.log();
-	console.log();
+	console.log(`Characteristic ${uuid} written ${(packet).join(" ")}`);
 
 	onCharacteristicWrite.call(this, gatt, characteristic, status);
 };

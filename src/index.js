@@ -3,5 +3,6 @@ Java.perform(function() {
 	require("./bluetooth/BluetoothGatt");
 	require("./bluetooth/BluetoothSocket");
 	require("./bluetooth/BluetoothGattCallback");
+	// require("./logger");
 });
 
