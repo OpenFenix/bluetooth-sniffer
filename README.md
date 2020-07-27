@@ -9,6 +9,9 @@ Sniffer of bluetooth traffic between phone and watch 🐶
 <!-- vim-markdown-toc GFM -->
 
 * [Important notes](#important-notes)
+* [Bluetooth protocol details](#bluetooth-protocol-details)
+	* [Gatt](#gatt)
+	* [BluetoothSocket](#bluetoothsocket)
 * [Classes used by Garmin Connect](#classes-used-by-garmin-connect)
 * [Author](#author)
 
@@ -17,6 +20,16 @@ Sniffer of bluetooth traffic between phone and watch 🐶
 ## Important notes
 
 * Keep in mind [android.bluetooth.BluetoothGattCallback](https://github.com/OpenFenix/bluetooth-sniffer/blob/master/src/bluetooth/BluetoothGattCallback/index.js#L1) is extended, so, you need to get class name for your specific version. Just search for `onCharacteristicChanged`. 
+
+## Bluetooth protocol details
+
+### Gatt
+
+It looks like they use multichannel communication, on top of a single Gatt service. First byte of each message looks like channel identifier. 
+
+### BluetoothSocket
+
+It looks like they use BluetoothSocket for transfering larger files. 
 
 ## Classes used by Garmin Connect
 
