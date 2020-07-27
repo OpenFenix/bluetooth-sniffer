@@ -1293,6 +1293,11 @@ commander@^3.0.0:
   resolved "https://registry.npmjs.org/commander/-/commander-3.0.2.tgz#6837c3fb677ad9933d1cfba42dd14d5117d6b39e"
   integrity sha512-Gar0ASD4BDyKC4hl4DwHqDrmvjoxWKZigVnAbn5H1owvm4CxCPdb0HQDehwNYMJpla5+M2tPmPARzhtYuwpHow==
 
+comment-parser@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.npmjs.org/comment-parser/-/comment-parser-0.6.2.tgz#b71e8fcacad954bea616779391838150d0096dcb"
+  integrity sha512-Wdms0Q8d4vvb2Yk72OwZjwNWtMklbC5Re7lD9cjCP/AG1fhocmc0TrxGBBAXPLy8fZQPrfHGgyygwI0lA7pbzA==
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
@@ -1519,6 +1524,19 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
+
+eslint-config-google@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.npmjs.org/eslint-config-google/-/eslint-config-google-0.14.0.tgz#4f5f8759ba6e11b424294a219dbfa18c508bcc1a"
+  integrity sha512-WsbX4WbjuMvTdeVL6+J3rK1RGhCTqjsFjX7UMSMgZiyxxaNLkoJENbrGExzERFeoTpGw3F3FypTiWAP9ZXzkEw==
+
+eslint-plugin-apklab-frida@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/eslint-plugin-apklab-frida/-/eslint-plugin-apklab-frida-1.0.5.tgz#b009117ade03ed65ab28d29c121ca0eaeecf906a"
+  integrity sha512-qXLl97VdWQvVIcfRw7RzxE/YIzzQynPvhA/fqUOYhQGCJHN5La+klrZjAQJEvcqT0X0+IzidatPlgT8NjPD2Ow==
+  dependencies:
+    comment-parser "^0.6.2"
+    eslint-config-google "^0.14.0"
 
 esmify@^2.1.1:
   version "2.1.1"
