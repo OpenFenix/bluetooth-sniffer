@@ -38,6 +38,12 @@ Characteristic 6a4e2812-667b-11e3-949a-0800200c9a66 changed
 
 ```
 
+```
+	0 1 1 0 0 0 0 0 0 0 1 0 0 103 0                        	| 0 1 1 0 0 0 0 0 0 0 1 0 0 67 0
+	0 1 1 0 0 0 0 0 0 0 4 0 0 102 0                        	| 0 1 1 0 0 0 0 0 0 0 4 0 0 66 0
+	0 1 1 0 0 0 0 0 0 0 22 0 0 104 0                       	| 0 1 1 0 0 0 0 0 0 0 16 0 0 68 0
+```
+
 ### BluetoothSocket
 
 It looks like they use BluetoothSocket for transfering larger files. 
