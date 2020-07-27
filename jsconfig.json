@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "module": "commonJS",
-    "baseUrl": "./src"
-  },
-  "include": ["src/**/*"]
-}

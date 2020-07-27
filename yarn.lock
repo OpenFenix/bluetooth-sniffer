@@ -820,6 +820,11 @@
   resolved "https://registry.npmjs.org/@types/frida-gum/-/frida-gum-16.1.0.tgz#8b7d793e01999227661cca8498061293f6441d9f"
   integrity sha512-45TiAnHr2eWsNjcsNaiyDKFEp+BAE7kY76Y9FamjsKafxgihYf0Wmq145n2IjM0b9Z5szHn4dQPZz/o3gDzu5w==
 
+"@types/node@^14.0.14":
+  version "14.0.26"
+  resolved "https://registry.npmjs.org/@types/node/-/node-14.0.26.tgz#22a3b8a46510da8944b67bfc27df02c34a35331c"
+  integrity sha512-W+fpe5s91FBGE0pEa0lnqGLL4USgpLgs4nokw16SrBBco/gQxuua7KnArSEOd5iaMqbbSHV10vUDkJYJJqpXKA==
+
 JSONStream@^1.0.3:
   version "1.3.5"
   resolved "https://registry.npmjs.org/JSONStream/-/JSONStream-1.3.5.tgz#3208c1f08d3a4d99261ab64f92302bc15e111ca0"
