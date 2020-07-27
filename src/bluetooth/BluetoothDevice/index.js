@@ -34,8 +34,6 @@ getType.implementation = function() {
 	return devices.getDeviceInfo(this).type;
 };
 
-console.log(123);
-
 const devices = {
 	byName: {},
 	byAddress: {},
