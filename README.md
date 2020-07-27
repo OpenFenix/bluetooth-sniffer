@@ -8,10 +8,15 @@ Sniffer of bluetooth traffic between phone and watch 🐶
 
 <!-- vim-markdown-toc GFM -->
 
+* [Important notes](#important-notes)
 * [Classes used by Garmin Connect](#classes-used-by-garmin-connect)
 * [Author](#author)
 
 <!-- vim-markdown-toc -->
+
+## Important notes
+
+* Keep in mind [android.bluetooth.BluetoothGattCallback](https://github.com/OpenFenix/bluetooth-sniffer/blob/master/src/bluetooth/BluetoothGattCallback/index.js#L1) is extended, so, you need to get class name for your specific version. Just search for `onCharacteristicChanged`. 
 
 ## Classes used by Garmin Connect
 
