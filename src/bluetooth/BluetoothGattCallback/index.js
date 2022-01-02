@@ -26,11 +26,11 @@ const logBinary = function(data) {
 		return;
 	}
 
-	const packet = data.slice(0, size - 1);
+	const packet = data.slice(0, size);
 
 	data = data.slice(size);
 
-	const packetHex = packet.map(num => num.toString(16));
+	const packetHex = packet.map(num => (num & 0xFF).toString(16));
 
 	const packetPlain = packet.map(num => {
 		if (num < 1 || num > 127) {
